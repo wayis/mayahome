@@ -8,7 +8,7 @@ todoApp
   function($routeProvider) {
     $routeProvider.
       when('/dashboard', {
-        templateUrl: 'views/devices.html',
+        templateUrl: 'views/dashboard.html',
         controller: 'DevicesListCtrl'
       }).
       otherwise({
