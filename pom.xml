@@ -41,6 +41,14 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <id>llabbe</id>
+            <name>Luc Labbé</name>
+            <email>luc.labbe@gmail.com</email>
+        </developer>
+    </developers>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
