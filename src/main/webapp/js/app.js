@@ -9,7 +9,7 @@ todoApp
     $routeProvider.
       when('/dashboard', {
         templateUrl: 'views/dashboard.html',
-        controller: 'DevicesListCtrl'
+        controller: 'DashboardCtrl'
       }).
       otherwise({
         redirectTo: '/dashboard'
