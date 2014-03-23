@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-6 clear-padding">
+        <img class="widget-image" src="images/widgets/light/light-{{device.value}}.png"/>
+
+        <div class="widget-action">
+            <!--<button class="btn btn-default" data-ng-model="device.value" btn-checkbox btn-checkbox-true="1"
+                    btn-checkbox-false="0">
+                <span data-ng-if="device.value == 0">On</span>
+                <span data-ng-if="device.value == 1">Off</span>
+            </button>
+            <input type="checkbox" data-size="mini">-->
+            <bs-switch type="checkbox" data-ng-model="device.value" switch-size="mini"></bs-switch>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="row widget-value" data-ng-if="!device.value">Off</div>
+        <div class="row widget-value" data-ng-if="device.value">On</div>
+        <div class="row widget-info">&nbsp;</div>
+    </div>
+</div>

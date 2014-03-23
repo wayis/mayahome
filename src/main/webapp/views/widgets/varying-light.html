@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-6 clear-padding">
+        <img class="widget-image" src="images/widgets/varying-light/light-100.jpg" data-ng-if="device.value == 100"/>
+        <img class="widget-image" src="images/widgets/varying-light/light-80.jpg"
+             data-ng-if="device.value >= 80 && device.value < 100"/>
+        <img class="widget-image" src="images/widgets/varying-light/light-60.jpg"
+             data-ng-if="device.value >= 60 && device.value < 80"/>
+        <img class="widget-image" src="images/widgets/varying-light/light-40.jpg"
+             data-ng-if="device.value >= 40 && device.value < 60"/>
+        <img class="widget-image" src="images/widgets/varying-light/light-20.jpg"
+             data-ng-if="device.value >= 20 && device.value < 40"/>
+        <img class="widget-image" src="images/widgets/varying-light/light-0.jpg"
+             data-ng-if="device.value >= 0 && device.value < 20"/>
+
+        <div class="widget-action">
+            <div>
+                <btn class="btn btn-default" data-ng-click="upDeviceValue(device)"><i class="fa fa-chevron-up"></i>
+                </btn>
+            </div>
+            <div>
+                <btn class="btn btn-default" data-ng-click="downDeviceValue(device)"><i class="fa fa-chevron-down"></i>
+                </btn>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="row widget-value" data-ng-if="device.value > 0">On</div>
+        <div class="row widget-value" data-ng-if="device.value == 0">Off</div>
+        <div class="row widget-info">{{device.value}}%</div>
+    </div>
+</div>

@@ -1,1 +1,13 @@
-<h1>MayaHome</h1>
+<div class="row">
+    <div class="col-sm-4 col-md-3" data-ng-repeat="device in devices">
+        <div class="panel panel-default">
+            <div class="panel-heading">{{device.name}}</div>
+            <div class="panel-body">
+                <ng-include src="'views/widgets/' + device.type + '.html'"></ng-include>
+            </div>
+            <div class="panel-footer">
+                <div class="pull-right">Dernière MàJ : {{device.update}} <i class="fa fa-refresh"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
