@@ -1,1 +1,37 @@
-[]
+[
+    {
+        "name": "Température extérieur",
+        "type": "meteo",
+        "value": 28,
+        "location": "Rabastens, Tarn",
+        "update": "20/03/2014 07:34"
+    },
+    {
+        "name": "Volet roulant Salon Gauche",
+        "type": "roller-shutter",
+        "value": 60,
+        "update": "20/03/2014 07:45"
+    },
+    {
+        "name": "Volet roulant Salon Droite",
+        "type": "roller-shutter",
+        "value": 20,
+        "update": "19/03/2014 18:04"
+    },
+    {
+        "name": "Spots du salon",
+        "type": "varying-light",
+        "value": 40,
+        "update": "20/03/2014 15:32"
+    },{
+        "name": "Lumière Entrée",
+        "type": "light",
+        "value": true,
+        "update": "20/03/2014 16:12"
+    },{
+        "name": "Lumière Bureau",
+        "type": "light",
+        "value": false,
+        "update": "20/03/2014 12:21"
+    }
+]
